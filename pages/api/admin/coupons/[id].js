@@ -1,6 +1,6 @@
 import dbConnect from '../../../../utils/mongo';
 import Coupon from '../../../../models/Coupon';
-import Order from '../../../../models/Order'; // make sure you have coupon field in Order schema
+import Order from '../../../../models/Order';
 
 export default async function handler(req, res) {
   await dbConnect();
