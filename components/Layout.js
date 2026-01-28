@@ -6,14 +6,14 @@ import { useRouter } from 'next/router';
 
 const Layout = ({ children, title, description, structuredData }) => {
   const router = useRouter();
-  const siteUrl = 'https://noordon.com';
+  const siteUrl = 'https://Amazon.com';
 
-  // ✅ Default structured data for the bakery (applies site-wide)
+  // ✅ Default structured data for the Arbirtage (applies site-wide)
   const defaultStructuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Bakery',
-    name: 'NURDAN Bakery',
-    image: `${siteUrl}/img/noordon.png`,
+    '@type': 'Arbirtage',
+    name: 'Amazon Arbirtage',
+    image: `${siteUrl}/img/Amazon.png`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '3548 Finish Line Dr',
@@ -28,7 +28,7 @@ const Layout = ({ children, title, description, structuredData }) => {
     <>
       <Head>
         {/* Title & Description */}
-        <title>{title ? `${title} | NURDAN Bakery` : 'NURDAN Bakery'}</title>
+        <title>{title ? `${title} | Amazon Arbirtage` : 'Amazon Arbirtage'}</title>
         <meta
           name="description"
           content={description || 'Freshly baked savory and pastries every day.'}
@@ -38,23 +38,23 @@ const Layout = ({ children, title, description, structuredData }) => {
         <link rel="canonical" href={`${siteUrl}${router.asPath}`} />
 
         {/* Open Graph */}
-        <meta property="og:title" content={title || 'NURDAN Bakery'} />
+        <meta property="og:title" content={title || 'Amazon Arbirtage'} />
         <meta
           property="og:description"
           content={description || 'Freshly baked savory and pastries every day.'}
         />
-        <meta property="og:image" content={`${siteUrl}/img/noordon.png`} />
+        <meta property="og:image" content={`${siteUrl}/img/Amazon.png`} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${siteUrl}${router.asPath}`} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title || 'NURDAN Bakery'} />
+        <meta name="twitter:title" content={title || 'Amazon Arbirtage'} />
         <meta
           name="twitter:description"
           content={description || 'Freshly baked savory and pastries every day.'}
         />
-        <meta name="twitter:image" content={`${siteUrl}/img/noordon.png`} />
+        <meta name="twitter:image" content={`${siteUrl}/img/Amazon.png`} />
 
         {/* ✅ Structured Data (uses default unless page overrides) */}
         <script

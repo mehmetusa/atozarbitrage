@@ -8,8 +8,8 @@
 }
 
 .sidePanel {
-  background-color: var(--sc);
-  color: var(--bc);
+  background-color: var(--pc);
+  color: var(--sc);
   padding: 20px;
   display: flex;
   flex-direction: row;

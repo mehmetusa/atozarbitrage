@@ -41,9 +41,9 @@ body {
 }
 
 :root {
-  --pc: #f8d0e0;
-  --sc: hotpink;
-  --tc: tan;
+  --pc: lightgray  ;
+  --sc: black;
+  --tc: black;
   --bc: #f9f9f9;
   --lg: #ededed;
   --dg: #a9a9a9;

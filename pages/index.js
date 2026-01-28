@@ -4,9 +4,7 @@ import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../redux/cartSlice';
 import dbConnect from '../utils/mongo';
-import Product from '../models/Product';
 import styles from '../styles/Home.module.css';
-import CreateOrderButton from '../components/CreateOrderButton';
 
 export default function Home({ products }) {
   const dispatch = useDispatch();
@@ -35,7 +33,7 @@ export default function Home({ products }) {
       {/* Top Banner */}
       <section className={styles.topBanner}>
         <Image
-          src="/img/featured11.avif"
+          src="/img/arbitrage1.avif"
           layout="fill"
           objectFit="cover"
           alt="Banner"
@@ -45,9 +43,9 @@ export default function Home({ products }) {
         <div className={styles.textWrapper}>
           <h1>
             WE ARE THE ONLY PLACE TO FIND
-            <br /> THE BEST, WELL BAKED TURKISH HALAL, KOSHER DISHES
+            <br /> THE BEST PRODUCTS, 
           </h1>
-          <p>No matter your plans, our menu has you covered with hand-crafted pastries, desserts</p>
+          <p>Amazon Arbitrage</p>
         </div>
       </section>
 
@@ -115,7 +113,6 @@ export default function Home({ products }) {
         </section>
       )}
 
-      <CreateOrderButton />
     </div>
   );
 }

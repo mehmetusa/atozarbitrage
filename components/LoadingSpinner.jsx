@@ -13,8 +13,8 @@ export default function LoadingSpinner({ message = 'Loading...' }) {
         className={styles.ring}
       >
         <Image
-          src="/img/noordon-outer.png"
-          alt="Noordon Bakery Ring"
+          src="/img/Amazon-outer.png"
+          alt="Amazon Arbirtage Ring"
           fill
           className={styles.ringImg}
         />
@@ -22,7 +22,7 @@ export default function LoadingSpinner({ message = 'Loading...' }) {
 
       {/* Static Inner Woman */}
       <div className={styles.inner}>
-        <Image src="/img/noordon-inner.png" alt="Baker" fill className={styles.innerImg} />
+        <Image src="/img/Amazon-inner.png" alt="Baker" fill className={styles.innerImg} />
       </div>
 
       {/* Loading Message */}

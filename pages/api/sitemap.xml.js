@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-  const baseUrl = 'https://www.noordon.com'; // your site URL
+  const baseUrl = 'https://www.Amazon.com'; // your site URL
   const pagesDir = path.join(process.cwd(), 'pages');
 
   // Read all page files

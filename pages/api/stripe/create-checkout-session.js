@@ -1,6 +1,5 @@
 import Stripe from 'stripe';
 import dbConnect from '../../../utils/mongo';
-import Product from '../../../models/Product';
 import Coupon from '../../../models/Coupon';
 import Order from '../../../models/Order';
 

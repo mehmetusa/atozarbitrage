@@ -51,7 +51,7 @@ const Contact = () => {
       <div className={styles.contactContainer}>
         {/* Contact Info */}
         <div className={styles.contactInfoMain}>
-          <img className={styles.logoContact} src="/img/noordon.png" alt="Logo" />
+          <img className={styles.logoContact} src="/img/Amazon.png" alt="Logo" />
           <h2>Contact Us</h2>
           <p>Have questions or ready to schedule service? Reach out today!</p>
 
@@ -62,7 +62,7 @@ const Contact = () => {
             </div>
             <div className={styles.contactItem}>
               <FaEnvelope className={styles.contactIcon} />
-              <span>info@noordon.com</span>
+              <span>info@Amazon.com</span>
             </div>
             <div className={styles.contactItem}>
               <FaMapMarkerAlt className={styles.contactIcon} />
@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
             <div className={styles.social}>
               <a
-                href="https://instagram.com/noordonbakery"
+                href="https://instagram.com/AmazonArbirtage"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -80,7 +80,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://youtube.com/@noordonbakery"
+                href="https://youtube.com/@AmazonArbirtage"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -90,7 +90,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://facebook.com/noordonbakery"
+                href="https://facebook.com/AmazonArbirtage"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -63,7 +63,7 @@ export default function SuccessPage() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Payment Successful!</h1>
-      <img className={styles.logoContact} src="/img/noordon.png" alt="Logo" />
+      <img className={styles.logoContact} src="/img/Amazon.png" alt="Logo" />
 
       <p className={styles.greeting}>
         Thank you, {order.customer?.name || 'Guest'}. Your order has been saved.

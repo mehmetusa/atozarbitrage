@@ -25,8 +25,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const baseMenu = [
-    { href: '/products', icon: <FaBoxOpen />, label: 'Products' },
-    { href: '/catering', icon: <FaConciergeBell />, label: 'Catering' },
+    { href: '/about', icon: <FaEnvelope />, label: 'About' },
     { href: '/contact', icon: <FaEnvelope />, label: 'Contact' },
   ];
 
@@ -54,7 +53,7 @@ const Navbar = () => {
     return items;
   };
 
-  const menuItems = [...baseMenu, ...authMenu()];
+  const menuItems = [ ...authMenu(),...baseMenu];
 
   const handleLinkClick = (action) => {
     if (action) action();
@@ -71,7 +70,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className={styles.logoWrapper}>
         <Link href="/" className={styles.logo}>
-          <Image src="/img/noordon.png" alt="Noordon Logo" width={100} height={100} />
+          <Image src="/img/logo.png" alt="Amazon Logo" width={100} height={100} />
         </Link>
       </div>
 

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.noordon.com
+Host: https://www.Amazon.com
 
 # Sitemaps
-Sitemap: https://www.noordon.com/sitemap.xml
+Sitemap: https://www.Amazon.com/sitemap.xml

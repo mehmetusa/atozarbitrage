@@ -6,7 +6,7 @@ export default function SEO({
   title,
   description,
   slug = '',
-  image = '/img/noordon.png',
+  image = '/img/Amazon.png',
   type = 'website', // "website" | "article" | "product"
   sku,
   price,
@@ -17,9 +17,9 @@ export default function SEO({
   const baseUrl = 'https://yourdomain.com';
 
   // ✅ Fallbacks
-  const defaultTitle = 'Noordon Bakery – Fresh Cakes, Pastries & Bread';
+  const defaultTitle = 'Amazon Arbirtage – Fresh Cakes, Pastries & Bread';
   const defaultDescription =
-    'Order fresh cakes, bread, and pastries from Noordon Bakery. Delicious, baked daily, and delivered to your door.';
+    'Order fresh cakes, bread, and pastries from Amazon Arbirtage. Delicious, baked daily, and delivered to your door.';
 
   const seoTitle = title || defaultTitle;
   const seoDescription = (description || defaultDescription).slice(0, 155);
@@ -56,14 +56,14 @@ export default function SEO({
       mainEntityOfPage: url,
       author: {
         '@type': 'Organization',
-        name: 'Noordon Bakery',
+        name: 'Amazon Arbirtage',
       },
     };
   } else {
     jsonLd = {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'Noordon Bakery',
+      name: 'Amazon Arbirtage',
       url: baseUrl,
       description: seoDescription,
     };

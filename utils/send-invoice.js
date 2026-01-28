@@ -16,13 +16,13 @@ export default async function sendInvoice(order, customerEmail) {
     });
 
     // PDF Content
-    const logoPath = path.join(process.cwd(), 'public', 'img', 'noordon.png');
+    const logoPath = path.join(process.cwd(), 'public', 'img', 'Amazon.png');
     if (fs.existsSync(logoPath)) {
       doc.image(logoPath, 50, 45, { width: 100 });
     }
     doc.moveDown(2);
 
-    doc.fontSize(20).text('Noordon Bakery', { align: 'center' });
+    doc.fontSize(20).text('Amazon Arbirtage', { align: 'center' });
     doc.moveDown();
     doc.fontSize(16).text(`Invoice #${order.displayId}`);
     doc.text(`Date: ${new Date(order.createdAt).toLocaleDateString()}`);
@@ -96,10 +96,10 @@ export default async function sendInvoice(order, customerEmail) {
 
     // --- Send Email ---
     await transporter.sendMail({
-      from: `"Noordon Bakery" <${process.env.SMTP_USER}>`,
+      from: `"Amazon Arbirtage" <${process.env.SMTP_USER}>`,
       to: customerEmail,
       subject: `Your Invoice #${order.displayId}`,
-      text: `Hello ${order.customer.name},\n\nThank you for your order! Your invoice is attached.\n\nTotal: $${order.total}\nDelivery: ${order.deliveryDate} (${order.deliverySlot})\n\n- Noordon Bakery`,
+      text: `Hello ${order.customer.name},\n\nThank you for your order! Your invoice is attached.\n\nTotal: $${order.total}\nDelivery: ${order.deliveryDate} (${order.deliverySlot})\n\n- Amazon Arbirtage`,
       attachments: [
         {
           filename: `Invoice-${order.displayId}.pdf`,

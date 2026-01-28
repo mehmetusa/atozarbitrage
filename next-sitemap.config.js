@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://www.noordon.com',
+  siteUrl: 'https://www.Amazon.com',
   generateRobotsTxt: true, // optional
   exclude: ['/admin/*'], // optional
 };

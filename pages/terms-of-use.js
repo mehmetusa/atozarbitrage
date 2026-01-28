@@ -4,7 +4,7 @@ const TermsOfUse = () => {
       <h1>Terms of Use</h1>
       <p>
         Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before
-        using the http://www.noordon.com website and the My Mobile App mobile application (the
+        using the http://www.Amazon.com website and the My Mobile App mobile application (the
         "Service") operated by My Company ("us", "we", or "our"). By accessing or using the Service
         you agree to be bound by these Terms. If you disagree with any part of the Terms then you
         may not access the Service. Purchases If you wish to purchase any product or service made

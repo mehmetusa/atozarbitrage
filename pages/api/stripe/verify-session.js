@@ -2,7 +2,6 @@
 import Stripe from 'stripe';
 import dbConnect from '../../../utils/mongo';
 import Order from '../../../models/Order';
-import Product from '../../../models/Product';
 import mongoose from 'mongoose';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);

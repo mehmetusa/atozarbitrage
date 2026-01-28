@@ -88,7 +88,7 @@ export default async function handler(req, res) {
       // Send invoice email
       try {
         await sendInvoice({ customerEmail: order.customer.email, order });
-        await sendInvoice(order, 'inoordon@gmail.com');
+        await sendInvoice(order, 'iAmazon@gmail.com');
         console.log(`📧 Invoice sent to ${order.customer.email}`);
       } catch (err) {
         console.error('⚠️ Failed to send invoice:', err);
